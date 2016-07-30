@@ -30,5 +30,21 @@ angular.module('healthyLivingApp')
             text: '10 locations for nature lovers!'
         }];
 
+        // definition of 3 content model
+        var content_baseURL = 'http://lorempixel.com/200/200/';
+        $scope.content = [{
+            img: baseURL + 'people',
+            title: 'About Us',
+            summary: 'We are good, we are the best out there'
+        }, {
+            img: baseURL + 'business',
+            title: 'Our Services',
+            summary: 'We offer advice on staying Healthy, what to eat...what are the best excercises for you etc.'
+        }, {
+            img: baseURL + 'transport',
+            title: 'Contact Us',
+            summary: '#111, Good Health Blvd, Happy Place, Antarctica, Zip-432167'
+        }];
+
         // end of controller
     });
