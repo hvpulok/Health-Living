@@ -1,0 +1,16 @@
+<h1>Gallery</h1>
+<div class="row">
+    <div class="col-sm-6 col-md-4 col-lg-4" ng-repeat="pic in pictures">
+        <div class="thumbnail">
+            <img src="{{pic.url}}" alt="image">
+            <div class="caption">
+                <h4 style="color:gold;">
+                    <span uib-rating ng-model="rate" max="max" read-only="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null" titles="['one','two','three']" aria-labelledby="default-rating"></span>
+                </h4>
+                <h3>{{pic.title}}</h3>
+                <p>{{pic.summary}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
