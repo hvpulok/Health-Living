@@ -17,10 +17,10 @@ angular.module('healthyLivingApp')
       data : 'subscribers',
       columnDefs: [
           { name:'No.', field: 'no' },
-          { name:'Name', field: 'name' },
-          { name:'Loyalty Score', field: 'loyalty'},
-          { name:'Date of Joining', field: 'joinDate'},
-          { name:'User Type', field: 'userType'}
+          { name:'Name', field: 'name', enableCellEdit: true  },
+          { name:'Loyalty Score', field: 'loyalty', enableCellEdit: true, type: 'number' },
+          { name:'Date of Joining', field: 'joinDate', enableCellEdit: true, type: 'date' },
+          { name:'User Type', field: 'userType', enableCellEdit: true}
         ]
     };
 
