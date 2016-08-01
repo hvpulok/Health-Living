@@ -8,10 +8,8 @@
  * Controller of the healthyLivingApp
  */
 angular.module('healthyLivingApp')
-  .controller('SubscribersCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('SubscribersCtrl', function($scope, $http) {
+    $http.get('http://localhost:9000/subscribers.json').success(function(data) {
+      $scope.subscribers = data;
+    });
   });
